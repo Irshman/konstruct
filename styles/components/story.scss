@@ -1,0 +1,70 @@
+.story {
+    padding: 57px 63px;
+    font-family: $main-font-family;
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 68px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 2px;
+            bottom: -13px;
+            left: 450px;
+            background-color: $primery-color;
+        }
+    }
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__info {
+        line-height: 1.5;
+        letter-spacing: 0.17px;
+        max-width: 405px;
+        margin-right: 85px;
+    }
+
+    &__name {
+        font-size: 20px;
+        margin-bottom: 30px;
+
+        
+        span {
+            color: $primery-color;
+        }
+    }
+
+    &__descr {
+        font-size: 13px;
+    }
+
+    
+    &__bg {
+        display: flex;
+        position: relative;
+
+        &-item {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+
+        &-title {
+            position: absolute;
+            font-size: 24px;
+            line-height: 1.6;
+            align-items: center;
+            color: $white;
+            max-width: 110px;
+            padding: 15px 0 0 14px;
+        }
+    }
+}

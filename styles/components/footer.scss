@@ -1,0 +1,121 @@
+.footer {
+    background-color: #141A20;
+    font-family: $main-font-family;
+    color: $white;
+    padding-top: 42px;
+
+    &__wrap {
+        display: flex;
+    }
+
+    &__title {
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 0.85px;
+    }
+
+    &__company {
+        max-width: 250px;
+
+        &--logo {
+            margin: 19px 0 15px 0;
+
+            img {
+                width: 102px;
+                height: 23px;
+            }
+        }
+
+        &--info {
+            font-size: 11px;
+            line-height: 19px;
+            letter-spacing: 0.85px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__links {
+        margin-left: 71px;
+        
+        &--lists {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        &--list {
+            &:not(:last-child) {
+                margin-right: 34px;
+            }
+        }
+
+        &--link {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: 600;
+            line-height: 25px;
+            letter-spacing: 0.85px;
+            transition: $trs;
+
+            &:hover {
+                color: $primery-color;
+            }
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        max-width: 141px;
+        margin-left: 58px;
+
+        &--info {
+            font-size: 11px;
+            line-height: 16px;
+            letter-spacing: 0.85px;
+            margin-top: 15px; 
+            
+            p {
+                margin-bottom: 15px;
+            }
+        }
+
+        &--maill-link {
+            color: $white;
+        }
+    }
+
+    &__social {
+        display: flex;
+        margin-left: 46px;
+
+        &--item {
+            
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+
+            img {
+                transition: $trs;
+
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+
+    &__info {
+        background-color: #171819;
+        height: 60px;
+        text-align: center;
+        width: 100%;
+
+        p {
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0.85px;
+            padding-top: 22px;
+        }
+    }
+}

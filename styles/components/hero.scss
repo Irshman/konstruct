@@ -1,0 +1,48 @@
+.hero {
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 317px;
+
+        img {
+            margin-top: 41px;
+            width: 102px;
+            height: 23px;
+        }
+    }
+
+    &__title {
+        font-family: $bebas-neue;
+        font-size: 60px;
+        line-height: 70px;
+        text-align: center;
+        color: $white;
+        letter-spacing: 5px;
+    }
+
+    &__subtitle {
+        font-family: $main-font-family;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: $white;
+        margin-bottom: 221px;
+    }
+
+    &__btn {
+        display: block;
+        color: $white;
+        font-family: $main-font-family;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 3.7px;
+    }
+}
