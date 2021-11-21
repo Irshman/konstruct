@@ -119,3 +119,25 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .footer {
+        &__wrap {
+            display: block;
+            margin-left: 100px;
+        }
+
+        &__links {
+            margin-left: 0;
+            margin-bottom: 50px;
+        }
+
+        &__contacts {
+            margin-left: 0;
+        }
+
+        &__social {
+            margin-left: 0;
+        }
+    }
+}

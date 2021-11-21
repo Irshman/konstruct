@@ -2,6 +2,7 @@
     background: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 90vh;
 
     &__logo {
@@ -44,5 +45,17 @@
         line-height: 15px;
         text-align: center;
         letter-spacing: 3.7px;
+    }
+}
+
+@media(max-width: 768px) {
+    .hero {
+        &__title {
+            font-size: 44px;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
     }
 }

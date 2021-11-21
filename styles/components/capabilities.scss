@@ -90,3 +90,64 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .capabilities {
+        &__title {
+            margin-left: 20px;            
+        }
+
+        &__btn {
+            &--link {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .capabilities {
+
+        &__header {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+            
+        }
+
+        &__title {
+            margin-right: 0;
+            
+            &::before {
+                left: 40%;
+                bottom: -15px;
+            }
+        }
+
+        &__descr {
+            margin-top: 40px;
+        }
+
+        &__btn {
+            margin-top: 20px;
+
+            &--link {
+                font-size: 13px;
+            }
+        }
+
+        &__blocks {
+            display: block;
+            
+        }
+
+        &__item {
+            width: 60%;
+            margin: 0 auto;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
