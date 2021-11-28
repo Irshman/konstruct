@@ -17,7 +17,7 @@
         height: 30px;
         position: relative;
         display: none;
-        margin-right: 150px;
+        margin-right: 10%;
 
         div {
             width: 100%;
@@ -109,7 +109,7 @@
 
             &--active {
                 position: fixed;
-                right: 15px;
+                right: 12%;
                 top: 330px;
             }
         }

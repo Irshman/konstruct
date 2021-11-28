@@ -74,6 +74,15 @@
             margin-left: 20px;
         }
 
+        &__input {
+            max-width: 100px;
+
+            &::placeholder {
+                font-size: 10px;
+                padding: 5px 0 5px 5px;
+            }
+        }
+
         &__btn {
             margin-top: 20px;
             max-width: 100px;

@@ -44,7 +44,8 @@ body {
   margin: 0;
   font: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: #48555B;
-  width: 100%;
+  width: 100vw;
+  display: block;
 }
 
 ul, ol {
@@ -138,7 +139,7 @@ a {
   height: 30px;
   position: relative;
   display: none;
-  margin-right: 150px;
+  margin-right: 10%;
 }
 .header__btn-menu div {
   width: 100%;
@@ -204,7 +205,7 @@ a {
   }
   .header__btn-menu--active {
     position: fixed;
-    right: 15px;
+    right: 12%;
     top: 330px;
   }
   .header__nav {
@@ -304,12 +305,20 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .story {
+    padding: 26px 30px;
+  }
+  .story__title {
+    margin-bottom: 34px;
+  }
+  .story__title::before {
+    left: 43%;
+  }
   .story__name {
     font-size: 16px;
   }
   .story__bg {
     justify-content: space-between;
-    margin-right: 0;
   }
 }
 @media (max-width: 530px) {
@@ -321,7 +330,7 @@ a {
     margin-top: 20px;
   }
   .story__bg-item {
-    margin-left: 130px;
+    margin: 0 auto;
   }
 }
 .capabilities {
@@ -413,10 +422,14 @@ a {
   }
 }
 @media (max-width: 768px) {
+  .capabilities {
+    padding: 30px 0 55px 0;
+  }
   .capabilities__header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 39px;
   }
   .capabilities__title {
     margin-right: 0;
@@ -426,7 +439,8 @@ a {
     bottom: -15px;
   }
   .capabilities__descr {
-    margin-top: 40px;
+    margin-top: 30px;
+    max-width: 80%;
   }
   .capabilities__btn {
     margin-top: 20px;
@@ -551,6 +565,13 @@ a {
   .mail__title {
     font-size: 18px;
     margin-left: 20px;
+  }
+  .mail__input {
+    max-width: 100px;
+  }
+  .mail__input::placeholder {
+    font-size: 10px;
+    padding: 5px 0 5px 5px;
   }
   .mail__btn {
     margin-top: 20px;

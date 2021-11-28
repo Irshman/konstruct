@@ -11,8 +11,10 @@ body {
     margin: 0;
     font: $main-font-family;
     color: $text-color;
-    width: 100%;
+    width: 100vw;
+    display: block;
 }
+
 ul, ol {
     list-style: none;
     padding: 0;
