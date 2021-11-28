@@ -45,7 +45,6 @@ body {
   font: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: #48555B;
   width: 100vw;
-  display: block;
 }
 
 ul, ol {
@@ -62,6 +61,10 @@ a {
   text-decoration: none;
   color: #48555B;
   cursor: pointer;
+}
+
+.wrapper {
+  overflow-x: hidden;
 }
 
 .conteiner {

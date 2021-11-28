@@ -12,7 +12,6 @@ body {
     font: $main-font-family;
     color: $text-color;
     width: 100vw;
-    display: block;
 }
 
 ul, ol {
@@ -29,6 +28,10 @@ a {
     text-decoration: none;
     color: $text-color;
     cursor: pointer;
+}
+
+.wrapper {
+    overflow-x: hidden;
 }
 
 .conteiner {
