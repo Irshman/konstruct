@@ -45,6 +45,7 @@ body {
   font: "Open Sans", "Arial", "Helvetica", sans-serif;
   color: #48555B;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 ul, ol {
@@ -79,23 +80,27 @@ a {
   background-position: center;
   height: 90vh;
 }
-.hero__logo {
+.hero__body {
+  position: relative;
   display: flex;
-  justify-content: center;
-  margin-bottom: 317px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 88vh;
+  padding: 20px;
 }
 .hero__logo img {
-  margin-top: 41px;
   width: 102px;
   height: 23px;
 }
-.hero__title {
+.hero__main-title {
   font-family: "Bebas Neue", "Arial", "Helvetica", sans-serif;
   font-size: 60px;
   line-height: 70px;
   text-align: center;
   color: #fff;
   letter-spacing: 5px;
+  margin-bottom: 10px;
 }
 .hero__subtitle {
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
@@ -104,10 +109,16 @@ a {
   line-height: 22px;
   text-align: center;
   color: #fff;
-  margin-bottom: 221px;
+}
+.hero__scroll {
+  display: block;
+  height: 30px;
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
 }
 .hero__btn {
-  display: block;
   color: #fff;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
@@ -115,14 +126,29 @@ a {
   line-height: 15px;
   text-align: center;
   letter-spacing: 3.7px;
+  position: absolute;
+  animation: jamping 0.9s linear infinite;
 }
 
 @media (max-width: 768px) {
-  .hero__title {
+  .hero__main-title {
     font-size: 44px;
   }
   .hero__subtitle {
     font-size: 16px;
+  }
+}
+@keyframes jamping {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
   }
 }
 .header {
@@ -179,6 +205,7 @@ a {
 .header__nav-list {
   display: flex;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  margin: 0 15px;
 }
 .header__nav-item {
   font-weight: 600;
@@ -275,6 +302,7 @@ a {
 }
 .story__descr {
   font-size: 13px;
+  padding: 0 10px;
 }
 .story__bg {
   display: flex;
@@ -595,6 +623,7 @@ a {
 }
 .footer__wrap {
   display: flex;
+  padding: 20px;
 }
 .footer__title {
   font-size: 11px;
@@ -681,12 +710,13 @@ a {
   line-height: 13px;
   letter-spacing: 0.85px;
   padding-top: 22px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .footer__wrap {
     display: block;
-    margin-left: 100px;
   }
   .footer__links {
     margin-left: 0;

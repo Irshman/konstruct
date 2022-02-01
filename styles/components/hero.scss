@@ -5,25 +5,34 @@
     background-position: center;
     height: 90vh;
 
-    &__logo {
+    &__body {
+        position: relative;
         display: flex;
-        justify-content: center;
-        margin-bottom: 317px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 88vh;
+        padding: 20px;
+    }
+
+    &__logo {
+        // display: flex;
+        // justify-content: center;
 
         img {
-            margin-top: 41px;
             width: 102px;
             height: 23px;
         }
     }
 
-    &__title {
+    &__main-title {
         font-family: $bebas-neue;
         font-size: 60px;
         line-height: 70px;
         text-align: center;
         color: $white;
         letter-spacing: 5px;
+        margin-bottom: 10px;
     }
 
     &__subtitle {
@@ -33,11 +42,18 @@
         line-height: 22px;
         text-align: center;
         color: $white;
-        margin-bottom: 221px;
+    }
+
+    &__scroll {
+        display: block;
+        height: 30px;
+        width: 150px;
+        margin: 0 auto;
+        position: relative;
+        cursor: pointer;
     }
 
     &__btn {
-        display: block;
         color: $white;
         font-family: $main-font-family;
         font-weight: 600;
@@ -45,17 +61,33 @@
         line-height: 15px;
         text-align: center;
         letter-spacing: 3.7px;
+        position: absolute;
+        animation: jamping  .9s linear infinite;
     }
 }
 
 @media(max-width: 768px) {
     .hero {
-        &__title {
+        &__main-title {
             font-size: 44px;
         }
 
         &__subtitle {
             font-size: 16px;
         }
+    }
+}
+
+@keyframes jamping {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(20px);
+        opacity: 0;
     }
 }

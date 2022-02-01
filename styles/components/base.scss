@@ -12,6 +12,7 @@ body {
     font: $main-font-family;
     color: $text-color;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 ul, ol {
