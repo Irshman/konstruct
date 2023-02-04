@@ -1,10 +1,16 @@
 let btn = document.querySelector('.header__btn-menu');
 let nav = document.querySelector('.header__nav');
+let links = document.querySelectorAll('.header__nav-link');
 
 btn.addEventListener('click', function() {
     btn.classList.toggle('header__btn-menu--active');
     nav.classList.toggle('header__nav--active');
 });
+
+links.forEach(link => link.addEventListener('click', function() {
+    nav.classList.remove('header__nav--active');
+    btn.classList.remove('header__btn-menu--active');
+}));
 
 //========================================================================================================================================================
 // scroll down
